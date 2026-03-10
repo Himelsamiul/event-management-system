@@ -219,6 +219,9 @@ Route::get('/sample/work', [WebSampleWorkController::class, 'sampleWork'])->name
             Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
             Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
             //SSLCOMMERZ END
+
+
+
             
     });
     Route::get('/payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
